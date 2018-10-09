@@ -1,0 +1,55 @@
+$lightGray: #EAF0ED
+$light: #F8F9Fa
+$grayGreen: #8DA291
+$darkGreen: #3F5D45
+$yellow: #FFE180
+$darkYellow: #ffd430
+$trp: transparent
+$ft-s : 16px
+$ft-m : 20px
+$ft-l : 24px
+
+@import 'reset'
+@import 'mixin'
+
+body,html
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    +font
+.gameGround
+    +size(600px,500px)
+    background-color: #ccc
+    position: relative
+    border: 5px solid #000
+    padding: 10px 0
+.infoWell
+    +size(100%)
+    position: absolute
+    left: 0
+    top: 0
+    background-color: #fff
+    z-index: 2
+    font-size: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    h2
+        padding: 30px
+    button
+        padding: 20px
+.ball
+    background-color: red
+    border-radius: 100px
+    transform: translate(-5px, -5px)
+.board
+    background-color: #fff
+//     +size(100px,20px)
+//     &.computer
+//         top: 50px
+//     &.player
+//         top: 530px
+// .grade
+//     padding: 10px
